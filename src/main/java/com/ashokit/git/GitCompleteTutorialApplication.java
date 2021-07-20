@@ -2,12 +2,13 @@ package com.ashokit.git;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class GitCompleteTutorialApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GitCompleteTutorialApplication.class, args);
+		ConfigurableApplicationContext context = SpringApplication.run(GitCompleteTutorialApplication.class, args);
 		System.out.println("Running");
 	}
 
